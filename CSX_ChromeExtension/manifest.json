@@ -1,0 +1,16 @@
+{
+    "manifest_version": 2,
+    "name": "focus",
+    "version": "1.0",
+    "description": "Extension to remove body of website and replace with an inspirational image",
+    "content_scripts": [
+        {
+            "matches": ["https://www.youtube.com/*", "https://twitter.com/*"],
+            "js": ["./jquery.min.js","./main.js"],
+            "css": ["./index.css"]
+        }
+    ],
+    "icons": {"16": "./favicon.png",
+              "48": "./favicon.png",
+              "128": "./favicon.png"}
+}
